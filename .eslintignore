@@ -1,0 +1,15 @@
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+.vscode
+
+src/.umi/**/*
+src/.umi-production/**/*
+**/*.min.js
+**/node_modules/**/*
+**/dist/**/*
+**/log/**/*
+public/**/*
+
+docs/**/*
