@@ -9,6 +9,7 @@ const HomePage: React.FC = (): JSX.Element => {
 
 	return (
 		<PageContainer
+			// title=""
 			extra={[
 				<Button
 					key="3"

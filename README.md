@@ -7,9 +7,11 @@
 
 ---
 
-#### 【vscode 插件】
+#### 【建议安装的 vscode 插件】
 
 - prettier
+- EditorConfig for VS Code
+- UnoCSS
 
 ---
 
