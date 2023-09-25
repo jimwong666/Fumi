@@ -1,15 +1,14 @@
 // 运行时配置，不要引入 node 依赖
 import { message, notification } from 'antd';
 import type { AxiosResponse, RuntimeConfig } from 'umi';
-import { defineApp, getIntl, getLocale } from 'umi';
+import { defineApp } from 'umi';
 import { ErrorShowType } from './constants';
 
 // 全局初始化数据配置，用于 Layout 用户信息和权限初始化，页面加载前执行
 // 更多信息见文档：https://next.umijs.org/docs/api/runtime-config#数据流
 export async function getInitialState(): Promise<Record<string, any>> {
+	console.log('getInitialState');
 	let itialState = {};
-
-	console.log('qwer', getIntl(getLocale()));
 
 	// 模拟初始化数据请求
 	await new Promise<void>((res) => {
@@ -23,7 +22,7 @@ export async function getInitialState(): Promise<Record<string, any>> {
 				logo: '/images/icon-64.png', // 左上角的logo
 			};
 			res();
-		}, 1000);
+		}, 2000);
 	});
 
 	return itialState;
